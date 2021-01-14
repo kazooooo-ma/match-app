@@ -1,0 +1,17 @@
+toukare:
+  # ディレクトリを指定するとその配下の Dockerfile を取得して実行する
+  build: ./
+  # `$ docker ps` 時に NAME として見える名前
+  container_name: toukare
+  # 勝手に終了しないよう設定しておく
+  command: tail -f /dev/null
+  # `$ docker exec -it my-python bash` でアタッチした際のカレントディレクトリとなる
+  working_dir: /root/app/
+  # ボリュームのマウント
+  volumes:
+     - ./ :/root/app/
+  # 環境変数
+  environment:
+    - TZ=Asia/Tokyo
+  env_file:
+    - ./.env

@@ -1,0 +1,9 @@
+*.png
+*.log
+*.exe
+.env
+.vscode
+chromedriver.exe:Zone.Identifier
+/.devcontainer/
+/__pycache__/
+
