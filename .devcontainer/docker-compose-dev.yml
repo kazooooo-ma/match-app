@@ -3,8 +3,8 @@ toukare:
   build: ./
   # `$ docker ps` 時に NAME として見える名前
   container_name: toukare
-  # Pythonファイル実行 
-  command: python toukare.py
+  # 勝手に終了しないよう設定しておく
+  command: tail -f /dev/null
   # `$ docker exec -it my-python bash` でアタッチした際のカレントディレクトリとなる
   working_dir: /root/app/
   # ボリュームのマウント
