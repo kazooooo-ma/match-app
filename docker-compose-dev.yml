@@ -1,0 +1,5 @@
+toukare:
+  # コンテナを停止しないようにする 
+  command: tail -f /dev/null
+
+
