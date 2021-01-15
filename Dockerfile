@@ -21,6 +21,6 @@ ENV LANGUAGE ja_JP:jp
 ENV LC_ALL ja_JP.UTF-8
 
 WORKDIR /root/app/
-COPY *.py /root/app/
+#COPY *.py /root/app/
 
-CMD ["python", "toukare.py"]
+#CMD ["python", "toukare.py"]

@@ -9,9 +9,10 @@ toukare:
   working_dir: /root/app/
   # ボリュームのマウント
   volumes:
-     - ./ :/root/app/
+     - .:/root/app/
   # 環境変数
   environment:
     - TZ=Asia/Tokyo
   env_file:
-    - ./.env
+    - .env
+
